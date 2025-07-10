@@ -1,0 +1,93 @@
+/* header */
+header {
+    background:#fff;
+    z-index:999;
+    width:100%;
+    padding:15px 275px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    transform:scaleY(1);
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {}
+header nav ul {
+    display:flex;
+    gap:124.29px;
+}
+header nav ul li {
+    height:100%;
+}
+header nav ul li a {
+    font-weight:500;
+}
+header nav .lnb {}
+header .lang {
+    width:max-content;
+    display:flex;
+    padding:5px 10px;
+    border:1px solid #000;
+}
+header .lang button {
+    font-size:0.75rem;
+    font-weight:500;
+}
+header .lang #kr {}
+header .lang #kr::after {
+    display:inline;
+    content:'|';
+    margin:0 5px;
+    font-weight:500;
+}
+header .lang #en {}
+/* main */
+main {}
+/* footer */
+footer {
+    background:#f3f3f3;
+}
+footer .top {
+    padding:20px 275px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #888;
+}
+footer .top a {
+    font-size:0.875rem;
+    font-weight:500;
+}
+footer .top select {
+    padding:5px 10px;
+    font-size:0.75rem;
+    text-transform:uppercase;
+    outline:none;
+    border:1px solid #000;
+    background:url(../images/down_icon.png) no-repeat 95% 55%;
+}
+footer .top select option {}
+footer .bottom {
+    padding:20px 275px;
+    display:flex;
+}
+footer .bottom .logo {
+    margin-right:10px;
+}
+footer .bottom .logo img {}
+footer .bottom .info {
+    display:flex;
+    flex-flow:column;
+    gap:10px;
+}
+footer .bottom .info p {
+    font-size:0.875rem;
+    font-weight:500;
+}
+footer .bottom .info .copy {}
+footer .bottom .info .address {}
+footer .bottom .info .tel {}
+footer .bottom .info .fax {}
+footer .bottom .info .license {}

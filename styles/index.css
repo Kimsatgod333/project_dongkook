@@ -1,0 +1,103 @@
+body, html {
+    transition:all 0.3s;
+}
+main {}
+main section {
+    height:100vh;
+}
+main #main_top {
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+main #main_top video {
+    position:absolute;
+    left:0; top:0;
+}
+main #main_top .text_wrap {
+    top:394px;
+    text-align:center;
+}
+main #main_top .text_wrap h1 {
+    font-size:3.375rem;
+    font-weight:700;
+    margin-bottom:30px;
+}
+main #main_top .text_wrap p {
+    font-size:1.375rem;
+    font-weight:700;
+}
+main #intro {
+    position:relative;
+    
+}
+main #intro .video_wrap {
+    position:absolute;
+}
+main #intro .text_wrap {}
+main #intro .text_wrap h2 {}
+main #intro .text_wrap p {}
+main #intro .content_wrap {}
+main #intro .content_wrap .content {}
+main #intro .content_wrap .content img {}
+main #intro .content_wrap .content img span {}
+main #intro .content_wrap .content1 {}
+main #intro .content_wrap .content2 {}
+main #intro .content_wrap .content3 {}
+main #intro .content_wrap .content4 {}
+main #medicine {}
+main #medicine .text_wrap {}
+main #medicine .text_wrap h2 {}
+main #medicine .text_wrap h2 p {}
+main #medicine .medicine_swiper {}
+main #medicine .medicine_swiper .swiper-wrapper {}
+main #medicine .medicine_swiper .swiper-wrapper .swiper-slide {}
+main #medicine .medicine_swiper .swiper-wrapper .slide1 {}
+main #medicine .medicine_swiper .swiper-wrapper .slide2 {}
+main #medicine .medicine_swiper .swiper-wrapper .slide3 {}
+main #medicine .medicine_swiper .swiper-wrapper .slide4 {}
+main #medicine .medicine_swiper .swiper-wrapper .slide5 {}
+main #medicine .medicine_swiper .swiper-wrapper .slide6 {}
+main #medicine .medicine_swiper .swiper-wrapper .slide7 {}
+main #medicine .medicine_swiper .swiper-wrapper .slide8 {}
+main #medicine .medicine_swiper .swiper-wrapper .slide9 {}
+main #medicine .medicine_swiper + .swiper-scrollbar {}
+main #medi_kit {}
+main #medi_kit .text_wrap {}
+main #medi_kit .text_wrap h2 {}
+main #medi_kit .text_wrap p {}
+main #medi_kit .kit_swiper {}
+main #medi_kit .kit_swiper .swiper-wrapper {}
+main #medi_kit .kit_swiper .swiper-wrapper .swiper-slide {}
+main #medi_kit .kit_swiper .swiper-wrapper .slide1 {}
+main #medi_kit .kit_swiper .swiper-wrapper .slide2 {}
+main #medi_kit .kit_swiper ~ .swiper-pagination {}
+main #medi_kit .kit_swiper ~ .swiper-button-prev {}
+main #medi_kit .kit_swiper ~ .swiper-button-next {}
+main #news {}
+main #news .text_wrap {}
+main #news .text_wrap h2 {}
+main #news .text_wrap p {}
+main #news .news_list {}
+main #news .news_list li {}
+main #news .news_list li a {}
+main #news .news_list li a span {}
+main #contact {}
+main #contact .text_wrap {}
+main #contact .text_wrap h2 {}
+main #contact .text_wrap p {}
+main #contact .text_wrap p:first-child {}
+main #contact form {}
+main #contact form input[type=text] {
+    padding:10px;
+    border-bottom:1px solid #fff;
+}
+main #contact form input {
+    padding:10px;
+    border-bottom:1px solid #fff;
+}
+@keyframes open {
+    0% {}
+    100% {}
+}
