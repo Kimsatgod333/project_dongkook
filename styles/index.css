@@ -11,48 +11,109 @@ main #main_top {
     justify-content:center;
     align-items:center;
 }
-main #main_top video {
+main #main_top .video_swiper {
     position:absolute;
     left:0; top:0;
+    z-index:-1;
+}
+main #main_top .video_swiper .swiper-wrapper {}
+main #main_top .video_swiper .swiper-wrapper .swiper-slide {}
+main #main_top .video_swiper .swiper-wrapper .swiper-slide video {
+    width:1920px;
 }
 main #main_top .text_wrap {
     top:394px;
     text-align:center;
 }
-main #main_top .text_wrap h1 {
+main #main_top .text_wrap h2 {
     font-size:3.375rem;
     font-weight:700;
     margin-bottom:30px;
+    color:#fff;
 }
 main #main_top .text_wrap p {
     font-size:1.375rem;
     font-weight:700;
+    color:#fff;
 }
 main #intro {
     position:relative;
-    
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
 }
-main #intro .video_wrap {
+main #intro video {
     position:absolute;
+    left:0; top:0;
+    z-index:-1;
+    width:100%;
 }
-main #intro .text_wrap {}
-main #intro .text_wrap h2 {}
-main #intro .text_wrap p {}
-main #intro .content_wrap {}
-main #intro .content_wrap .content {}
-main #intro .content_wrap .content img {}
-main #intro .content_wrap .content img span {}
+main #intro .text_wrap {
+    padding:120px 0;
+}
+main #intro .text_wrap * {
+    color:#fff;
+}
+main #intro .text_wrap h2 {
+    font-size:3rem;
+    font-weight:500;
+    margin-bottom:30px;
+}
+main #intro .text_wrap p {
+    font-weight:500;
+}
+main #intro .content_wrap {
+    width:100%;
+    padding:120px 275px;
+    display:flex;
+    justify-content:space-between;
+}
+main #intro .content_wrap .content {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main #intro .content_wrap * {
+    color:#fff;
+}
+main #intro .content_wrap .content img {
+    width:100px;
+    margin-bottom:30px;
+}
+main #intro .content_wrap .content span {
+    font-size:1.25rem;
+    font-weight:600;
+    line-height:1.5;
+}
 main #intro .content_wrap .content1 {}
 main #intro .content_wrap .content2 {}
 main #intro .content_wrap .content3 {}
 main #intro .content_wrap .content4 {}
-main #medicine {}
-main #medicine .text_wrap {}
-main #medicine .text_wrap h2 {}
+main #medicine {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    text-align:center;
+}
+main #medicine .text_wrap {
+    padding:70px 275px;
+}
+main #medicine .text_wrap h2 {
+    font-size:3rem;
+    font-weight:500;
+    margin-bottom:30px;
+}
 main #medicine .text_wrap h2 p {}
-main #medicine .medicine_swiper {}
+main #medicine .medicine_swiper {
+    width:1780px;
+    height:474px;
+}
 main #medicine .medicine_swiper .swiper-wrapper {}
-main #medicine .medicine_swiper .swiper-wrapper .swiper-slide {}
+main #medicine .medicine_swiper .swiper-wrapper .swiper-slide {
+    background-color: aqua;
+}
 main #medicine .medicine_swiper .swiper-wrapper .slide1 {}
 main #medicine .medicine_swiper .swiper-wrapper .slide2 {}
 main #medicine .medicine_swiper .swiper-wrapper .slide3 {}
@@ -63,40 +124,171 @@ main #medicine .medicine_swiper .swiper-wrapper .slide7 {}
 main #medicine .medicine_swiper .swiper-wrapper .slide8 {}
 main #medicine .medicine_swiper .swiper-wrapper .slide9 {}
 main #medicine .medicine_swiper + .swiper-scrollbar {}
-main #medi_kit {}
-main #medi_kit .text_wrap {}
-main #medi_kit .text_wrap h2 {}
-main #medi_kit .text_wrap p {}
-main #medi_kit .kit_swiper {}
+main #medi_kit {
+    background-color:#162B48;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main #medi_kit .text_wrap {
+    border-bottom:1px solid #fff;
+    width:1370px;
+    padding:120px 0 80px;
+}
+main #medi_kit .text_wrap * {
+    color:#fff;
+}
+main #medi_kit .text_wrap h2 {
+    text-align:center;
+    font-size:3rem;
+    font-weight:500;
+}
+main #medi_kit .kit_swiper {
+    width:1370px;
+    height:500px;
+}
+main #medi_kit .kit_swiper * {
+    color:#fff;
+}
 main #medi_kit .kit_swiper .swiper-wrapper {}
-main #medi_kit .kit_swiper .swiper-wrapper .swiper-slide {}
+main #medi_kit .kit_swiper .swiper-wrapper .swiper-slide {
+    background-color:aqua;
+}
 main #medi_kit .kit_swiper .swiper-wrapper .slide1 {}
 main #medi_kit .kit_swiper .swiper-wrapper .slide2 {}
-main #medi_kit .kit_swiper ~ .swiper-pagination {}
-main #medi_kit .kit_swiper ~ .swiper-button-prev {}
-main #medi_kit .kit_swiper ~ .swiper-button-next {}
-main #news {}
-main #news .text_wrap {}
-main #news .text_wrap h2 {}
+main #medi_kit .kit_swiper .swiper-pagination {}
+main #medi_kit .kit_swiper .swiper-button-prev {
+    display:none;
+}
+main #medi_kit .kit_swiper .swiper-button-next {}
+main #news {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main #news .text_wrap {
+    width:100%;
+    padding:120px 275px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+main #news .text_wrap h2 {
+    font-size:3rem;
+    font-weight:500;
+}
 main #news .text_wrap p {}
+main #news .text_wrap p a {
+    font-size:0.875rem;
+    font-weight:500;
+    color:#888;
+    text-decoration:underline;
+}
 main #news .news_list {}
 main #news .news_list li {}
 main #news .news_list li a {}
 main #news .news_list li a span {}
-main #contact {}
-main #contact .text_wrap {}
-main #contact .text_wrap h2 {}
-main #contact .text_wrap p {}
-main #contact .text_wrap p:first-child {}
-main #contact form {}
+main #contact {
+    padding:0 275px;
+    background-color:#162B48;
+    display:flex;
+    flex-flow:row-reverse;
+    gap:230px;
+    align-items:center;
+}
+main #contact .text_wrap {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:end;
+    text-align:right;
+}
+main #contact .text_wrap * {color:#fff;}
+main #contact .text_wrap h2 {
+    text-transform:uppercase;
+    font-size:3rem;
+    font-weight:500;
+}
+main #contact .text_wrap p {
+    width:max-content;
+    line-height:1.5;
+}
+main #contact .text_wrap p:nth-of-type(1) {
+    margin:30px 0;
+}
+main #contact form {
+    width:100%;
+    display:flex;
+    flex-flow:column nowrap;
+    gap:30px;
+}
 main #contact form input[type=text] {
+    background:none;
     padding:10px;
     border-bottom:1px solid #fff;
+    color:#fff;
 }
+main #contact form input::placeholder {
+    color:#fff;
+    font-size:1.125rem;
+    width:100%
+}
+main #contact form #inquiries {
+    border:1px solid #fff;
+    background:none;
+    height:150px;
+    border-radius:10px;
+    padding:10px;
+    overflow:auto;
+    text-overflow: clip;
+    font-size:1.125rem;
+    color:#fff;
+    outline:none;
+}
+main #contact form #inquiries::placeholder{color:#fff;}
 main #contact form input {
     padding:10px;
     border-bottom:1px solid #fff;
+    font-size:1.125rem;
 }
+main #contact form .check {
+    width:100%;
+    display:flex;
+    padding:10px;
+    border-bottom:1px solid #fff;
+}
+main #contact form .check * {
+    color:#fff;
+    width:max-content;
+}
+main #contact form .check p {
+    font-size:1.125rem;
+    margin-right:70px;
+}
+main #contact form .check input {
+    display:none;
+}
+main #contact form .check input:checked + label {
+    background:url(../images/checkbox_icon/check_on.png) no-repeat left 100%;
+}
+main #contact form .check label {
+    background:url(../images/checkbox_icon/check_off.png) no-repeat left 100%;
+    padding-left:21px;
+    font-size:1.125rem;
+    margin-right:43px;
+    cursor: pointer;
+}
+main #contact form .check label:last-child {
+    margin-right:0;
+}
+main #contact form #send {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+main #contact form #send span {
+    color:#fff;
+}
+main #contact form #send img {}
 @keyframes open {
     0% {}
     100% {}
