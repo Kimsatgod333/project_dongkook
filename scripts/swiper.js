@@ -1,6 +1,7 @@
 const videoSwiper = new Swiper('.video_swiper',{
-    autoplay:{delay:5000},
-    effect:'fade'
+    autoplay:{delay:4000},
+    loop:true,
+    effect:'fade',
 })
 const medicineSwiper = new Swiper('.medicine_swiper', {
     slidesPerView:4,

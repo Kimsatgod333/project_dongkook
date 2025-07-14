@@ -8,8 +8,10 @@ header {
     justify-content:space-between;
     align-items:center;
     position:fixed;
-    transform:scaleY(1);
+    transform-origin:center top;
+    transition:all 0.3s;
 }
+header * {width:max-content;}
 header h1 {}
 header h1 a {}
 header h1 a img {}

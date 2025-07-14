@@ -3,6 +3,8 @@ body, html {
 }
 main {}
 main section {
+    width:100%;
+    overflow:hidden;
     height:100vh;
 }
 main #main_top {
