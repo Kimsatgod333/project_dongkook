@@ -1,5 +1,6 @@
 body, html {
     transition:all 0.3s;
+    scroll-behavior:smooth;
 }
 main {}
 main section {
@@ -7,6 +8,7 @@ main section {
     overflow:hidden;
     height:100vh;
 }
+/* 최상단 */
 main #main_top {
     position:relative;
     display:flex;
@@ -32,12 +34,15 @@ main #main_top .text_wrap h2 {
     font-weight:700;
     margin-bottom:30px;
     color:#fff;
+    animation: open 1.5s both;
 }
 main #main_top .text_wrap p {
     font-size:1.375rem;
     font-weight:700;
     color:#fff;
+    animation: open 1.5s 1s both;
 }
+/* 회사소개 */
 main #intro {
     position:relative;
     display:flex;
@@ -93,6 +98,7 @@ main #intro .content_wrap .content1 {}
 main #intro .content_wrap .content2 {}
 main #intro .content_wrap .content3 {}
 main #intro .content_wrap .content4 {}
+/* 의약품 */
 main #medicine {
     display:flex;
     flex-flow:column nowrap;
@@ -110,11 +116,27 @@ main #medicine .text_wrap h2 {
 main #medicine .text_wrap h2 p {}
 main #medicine .medicine_swiper {
     width:1780px;
-    height:474px;
+    height:max-content;
 }
 main #medicine .medicine_swiper .swiper-wrapper {}
 main #medicine .medicine_swiper .swiper-wrapper .swiper-slide {
-    background-color: aqua;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    overflow:hidden;
+    border:1px solid #000;
+}
+main #medicine .medicine_swiper .swiper-wrapper .swiper-slide img {
+    border-bottom:1px solid #000;
+}
+main #medicine .medicine_swiper .swiper-wrapper .swiper-slide span {
+    font-size:1.125rem;
+    padding:25px;
+    width:305px;
+    text-wrap:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
 }
 main #medicine .medicine_swiper .swiper-wrapper .slide1 {}
 main #medicine .medicine_swiper .swiper-wrapper .slide2 {}
@@ -126,6 +148,7 @@ main #medicine .medicine_swiper .swiper-wrapper .slide7 {}
 main #medicine .medicine_swiper .swiper-wrapper .slide8 {}
 main #medicine .medicine_swiper .swiper-wrapper .slide9 {}
 main #medicine .medicine_swiper + .swiper-scrollbar {}
+/* 의료장비 */
 main #medi_kit {
     background-color:#162B48;
     display:flex;
@@ -153,9 +176,7 @@ main #medi_kit .kit_swiper * {
     color:#fff;
 }
 main #medi_kit .kit_swiper .swiper-wrapper {}
-main #medi_kit .kit_swiper .swiper-wrapper .swiper-slide {
-    background-color:aqua;
-}
+main #medi_kit .kit_swiper .swiper-wrapper .swiper-slide {}
 main #medi_kit .kit_swiper .swiper-wrapper .slide1 {}
 main #medi_kit .kit_swiper .swiper-wrapper .slide2 {}
 main #medi_kit .kit_swiper .swiper-pagination {}
@@ -163,6 +184,7 @@ main #medi_kit .kit_swiper .swiper-button-prev {
     display:none;
 }
 main #medi_kit .kit_swiper .swiper-button-next {}
+/* 뉴스 */
 main #news {
     display:flex;
     flex-flow:column nowrap;
@@ -190,6 +212,7 @@ main #news .news_list {}
 main #news .news_list li {}
 main #news .news_list li a {}
 main #news .news_list li a span {}
+/* 문의 */
 main #contact {
     padding:0 275px;
     background-color:#162B48;
@@ -292,6 +315,12 @@ main #contact form #send span {
 }
 main #contact form #send img {}
 @keyframes open {
-    0% {}
-    100% {}
+    0% {
+        transform:translateY(90px);
+        opacity:0;
+    }
+    100% {
+        transform:translateY(0);
+        opacity:1;
+    }
 }

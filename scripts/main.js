@@ -9,3 +9,12 @@ prevBtn.addEventListener('click', ()=>{
     nextBtn.style.display = 'block'
     prevBtn.style.display = 'none'
 })
+/* 의약품 목록 */
+const medicine = document.querySelectorAll('.medicine_swiper .swiper-slide');
+for(i = 0 ; i < 9 ; i++){
+    medicine[i].innerHTML = `<img src=${medicineList[i].src}>`
+    medicine[i].innerHTML += `<span>${medicineList[i].name}</span>`
+    medicine[i].addEventListener('click',()=>{
+        window.location.href = './medicine.html'
+    })
+}

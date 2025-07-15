@@ -1,11 +1,13 @@
 const videoSwiper = new Swiper('.video_swiper',{
+    slidesPerView:1,
     autoplay:{delay:4000},
-    loop:true,
     effect:'fade',
+    loop:true,
 })
 const medicineSwiper = new Swiper('.medicine_swiper', {
     slidesPerView:4,
     spaceBetween:60,
+    loop:true,
     autoplay:{delay:2000},
 })
 const medikitSwiper = new Swiper('.kit_swiper', {
