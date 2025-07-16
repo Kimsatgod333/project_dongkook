@@ -14,5 +14,8 @@ const medikitSwiper = new Swiper('.kit_swiper', {
     navigation:{
         prevEl:'.kit_swiper .swiper-button-prev',
         nextEl:'.kit_swiper .swiper-button-next'
+    },
+    pagination:{
+        el:'.kit_swiper .swiper-pagination'
     }
 })

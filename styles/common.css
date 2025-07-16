@@ -37,7 +37,9 @@ header .lang button {
     font-size:0.75rem;
     font-weight:500;
 }
-header .lang #kr {}
+header .lang #kr {
+    font-weight:600;
+}
 header .lang #kr::after {
     display:inline;
     content:'|';

@@ -3,6 +3,15 @@ body, html {
     scroll-behavior:smooth;
 }
 main {}
+main .move_btn p {
+    margin-right:40px;
+}
+main .move_btn .section_list {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:20px;
+}
+main .move_btn .section_list a {}
 main section {
     width:100%;
     overflow:hidden;
@@ -19,6 +28,7 @@ main #main_top .video_swiper {
     position:absolute;
     left:0; top:0;
     z-index:-1;
+    width:100%;
 }
 main #main_top .video_swiper .swiper-wrapper {}
 main #main_top .video_swiper .swiper-wrapper .swiper-slide {}
@@ -176,14 +186,46 @@ main #medi_kit .kit_swiper * {
     color:#fff;
 }
 main #medi_kit .kit_swiper .swiper-wrapper {}
-main #medi_kit .kit_swiper .swiper-wrapper .swiper-slide {}
-main #medi_kit .kit_swiper .swiper-wrapper .slide1 {}
-main #medi_kit .kit_swiper .swiper-wrapper .slide2 {}
-main #medi_kit .kit_swiper .swiper-pagination {}
-main #medi_kit .kit_swiper .swiper-button-prev {
-    display:none;
+main #medi_kit .kit_swiper .swiper-wrapper .swiper-slide {
+    display:flex;
+    align-items:center;
 }
-main #medi_kit .kit_swiper .swiper-button-next {}
+main #medi_kit .kit_swiper .swiper-wrapper .swiper-slide p {
+    font-size:1.25rem;
+    font-weight:500;
+    line-height:1.7;
+}
+main #medi_kit .kit_swiper .swiper-wrapper .swiper-slide p img {}
+main #medi_kit .kit_swiper .swiper-wrapper .slide1 {
+    gap:90px;
+}
+main #medi_kit .kit_swiper .swiper-wrapper .slide1 p {}
+main #medi_kit .kit_swiper .swiper-wrapper .slide1 p img {}
+main #medi_kit .kit_swiper .swiper-wrapper .slide2 {
+    justify-content:flex-end;
+    gap:70px;
+}
+main #medi_kit .kit_swiper .swiper-wrapper .slide2 p {
+    text-align:right;
+}
+main #medi_kit .kit_swiper .swiper-wrapper .slide2 p img {}
+main #medi_kit .kit_swiper .swiper-pagination {}
+main #medi_kit .kit_swiper .swiper-pagination-bullet {
+    background-color:#fff;
+    margin-right:25px;
+    transition:all 0.3s;
+}
+main #medi_kit .kit_swiper .swiper-pagination-bullet-active {
+    width:50px;
+    border-radius:5px;
+}
+main #medi_kit .kit_swiper .swiper-button-prev {
+    transform:translateX(-200px);
+    transition:all 0.3s;
+}
+main #medi_kit .kit_swiper .swiper-button-next {
+    transition:all 0.3s;
+}
 /* 뉴스 */
 main #news {
     display:flex;
@@ -208,10 +250,24 @@ main #news .text_wrap p a {
     color:#888;
     text-decoration:underline;
 }
-main #news .news_list {}
+main #news .news_list {
+    display:flex;
+    gap:10px;
+}
 main #news .news_list li {}
 main #news .news_list li a {}
-main #news .news_list li a span {}
+main #news .news_list li a img {}
+main #news .news_list li a .date {
+    margin:10px 0 20px;
+    padding:0 10px;
+    font-size:0.875rem;
+    font-weight:500;
+}
+main #news .news_list li a .title {
+    padding:0 10px;
+    font-weight:500;
+    line-height:1.5;
+}
 /* 문의 */
 main #contact {
     padding:0 275px;
