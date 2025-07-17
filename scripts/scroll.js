@@ -149,6 +149,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end:'bottom 50%',
         },
         duration:1,
+        delay:1,
         opacity:1,
     })
     gsap.fromTo('#contact form',{
@@ -162,7 +163,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end:'bottom 10%',
         },
         duration:1,
-        delay:1,
         opacity:1,
     })
 });
