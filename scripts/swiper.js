@@ -1,6 +1,6 @@
 const videoSwiper = new Swiper('.video_swiper',{
     slidesPerView:1,
-    autoplay:{delay:4000},
+    autoplay:{delay:4500},
     effect:'fade',
     loop:true,
 })
